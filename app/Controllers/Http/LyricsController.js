@@ -25,7 +25,7 @@ class LyricsController {
             statusCode: 0,
             message: 'Success',
             resultSet: {
-                lyrics: lrc
+                lyrics: JSON.stringify(lrc)
             }
         });
     }
