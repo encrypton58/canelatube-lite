@@ -30,5 +30,7 @@ const Server_1 = __importDefault(global[Symbol.for('ioc.use')]("Adonis/Core/Serv
 Server_1.default.middleware.register([
     () => Promise.resolve().then(() => __importStar(global[Symbol.for('ioc.use')]("Adonis/Core/BodyParser"))),
 ]);
-Server_1.default.middleware.registerNamed({});
+Server_1.default.middleware.registerNamed({
+    language: () => Promise.resolve().then(() => __importStar(global[Symbol.for('ioc.use')]('App/Middleware/Language')))
+});
 //# sourceMappingURL=kernel.js.map

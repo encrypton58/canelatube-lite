@@ -1,0 +1,1 @@
+{"version":3,"file":"BadRequestException.js","sourceRoot":"","sources":["../../../app/Exceptions/BadRequestException.ts"],"names":[],"mappings":";;;;;AAAA,gEAA2D;AAC3D,sGAAuD;AAevD,MAAqB,mBAAoB,SAAQ,sBAAS;IAItD,YAAY,aAA4B;QACpC,KAAK,CAAC,aAAa,CAAC,KAAK,EAAE,uBAAa,CAAC,gBAAgB,EAAE,aAAa,CAAC,IAAI,CAAC,CAAA;QAC9E,IAAI,CAAC,aAAa,GAAG,aAAa,CAAA;IACtC,CAAC;CAEJ;AATD,sCASC"}
