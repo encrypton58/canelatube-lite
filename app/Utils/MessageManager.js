@@ -32,6 +32,26 @@ exports.default = {
                 return `Content type not allowed 🚫`;
         }
     },
+    required(field) {
+        switch (this.language) {
+            case 'es':
+                return `El campo ${field} no es correcto 😭`;
+            case 'en':
+                return `Field ${field} not correct 😭`;
+            default:
+                return `Field ${field} not correct 😭`;
+        }
+    },
+    fieldsRequiredMoreDetails() {
+        switch (this.language) {
+            case 'es':
+                return `Necesitamos más información sobre los campos requeridos 📄❌`;
+            case 'en':
+                return `We need more information about the required fields 📄❌`;
+            default:
+                return `We need more information about the required fields 📄❌`;
+        }
+    },
     contentTypeNotAllowedDetails() {
         switch (this.language) {
             case 'es':
