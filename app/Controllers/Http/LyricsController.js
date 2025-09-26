@@ -16,7 +16,7 @@ class LyricsController {
         const payload = await request.validate({
             schema: Validator_1.schema.create({
                 isSync: Validator_1.schema.boolean(),
-                lyrics: Validator_1.schema.string({ trim: true, escape: true }),
+                lyrics: Validator_1.schema.string({ trim: true }),
             }),
             messages: {
                 required: MessageManager_1.default.required('{{field}}')
