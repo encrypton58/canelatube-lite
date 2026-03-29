@@ -17,6 +17,10 @@ class ExceptionHandler extends HttpExceptionHandler_1.default {
         if (error.code == ServerConstants_1.default.E_BAD_REQUEST) {
             return ctx.response.status(HttpConstants_1.default.BAD_REQUEST_CODE).json(error.errorResponse);
         }
+        if (error.code == ServerConstants_1.default.E_UNAUTHORIZED) {
+            const errorResponse = new ErrorResponse_1.default(ServerConstants_1.default.E_UNAUTHORIZED, MessageManager_1.default.unauthorized(), ctx.response.getStatus(), MessageManager_1.default.unauthorizedDetails());
+            return ctx.response.status(HttpConstants_1.default.UNAUTHORIZED_CODE).json(errorResponse);
+        }
         if (ctx.response.getStatus() == HttpConstants_1.default.UNPROCESSABLE_ENTITY_CODE_HTTP) {
             const errorResponse = new ErrorResponse_1.default(ServerConstants_1.default.E_FIELDS_REQUIRED_CODE, MessageManager_1.default.fieldsRequired(), ctx.response.getStatus(), MessageManager_1.default.fieldsRequiredDetails());
             return ctx.response.status(HttpConstants_1.default.UNPROCESSABLE_ENTITY_CODE_HTTP).json(errorResponse);

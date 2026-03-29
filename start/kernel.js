@@ -31,6 +31,7 @@ Server_1.default.middleware.register([
     () => Promise.resolve().then(() => __importStar(global[Symbol.for('ioc.use')]("Adonis/Core/BodyParser"))),
 ]);
 Server_1.default.middleware.registerNamed({
-    language: () => Promise.resolve().then(() => __importStar(global[Symbol.for('ioc.use')]('App/Middleware/Language')))
+    language: () => Promise.resolve().then(() => __importStar(global[Symbol.for('ioc.use')]('App/Middleware/Language'))),
+    apiKey: () => Promise.resolve().then(() => __importStar(global[Symbol.for('ioc.use')]('App/Middleware/ApiKeyMiddleware')))
 });
 //# sourceMappingURL=kernel.js.map

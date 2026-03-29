@@ -4,5 +4,6 @@ exports.default = {
     BAD_REQUEST_CODE: 400,
     SUCCESS_CODE: 200,
     UNPROCESSABLE_ENTITY_CODE_HTTP: 422,
+    UNAUTHORIZED_CODE: 401
 };
 //# sourceMappingURL=HttpConstants.js.map
